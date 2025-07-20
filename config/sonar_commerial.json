@@ -1,0 +1,37 @@
+{
+  "issues": [
+    {
+      "key": "AXT1A-B12345",
+      "rule": "java:S3649", 
+      "severity": "CRITICAL",
+      "component": "com.ameya.service.VulnerableApp",
+      "project": "com.ameya:secure-app",
+      "message": "Make sure that using this query is safe here.",
+      "line": 7,
+      "textRange": {
+        "startLine": 7,
+        "endLine": 7,
+        "startOffset": 36,
+        "endOffset": 94
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "message": "User-provided value is concatenated into the SQL query.",
+              "filePath": "src/main/java/com/ameya/service/VulnerableApp.java",
+              "textRange": {
+                "startLine": 7,
+                "endLine": 7
+              }
+            }
+          ]
+        }
+      ],
+      "cwe": "CWE-89",
+      "type": "VULNERABILITY",
+      "status": "OPEN",
+      "effort": "5min"
+    }
+  ]
+}

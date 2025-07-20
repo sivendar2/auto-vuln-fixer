@@ -1,0 +1,5 @@
+{
+  "java:S2076": { "cwe": "CWE-89", "fix_strategy": "SEMIGREP_SQLI" },
+  "java:S2631": { "cwe": "CWE-117", "fix_strategy": "SEMIGREP_LOG_INJECTION" }
+   
+}
